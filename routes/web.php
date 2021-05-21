@@ -55,6 +55,7 @@ Route::middleware('checkRole:'.ADMIN )->prefix('test')->group(function(){
 Route::get('/clear', function() {
     $exitCode = Artisan::call('cache:clear');
     dd("cleared");
+    dd("cleared");
     // return what you want
 });
 
